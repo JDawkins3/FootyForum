@@ -3,10 +3,7 @@ Action2 = document.getElementById("lions");
 homeBtn = document.getElementById("homeBtn");
 
 
-page2Btn.addEventListener("click", function(){
-    document.body.style.backgroundColor = "rgb(43, 255, 0)";
-    homeBtn.style.color = "red";
-})
+
 
 crows = document.getElementById("crows");
  crows.addEventListener("click", function(){
@@ -309,17 +306,13 @@ const Chosen1 = document.createElement('p');
 Chosen2 = document.createElement('p');
 resetBtn = document.getElementById("resetBTN");
 
-/*resetBtn.addEventListener("click", function aa(){
-    Chosen1.innerText ="";
-    Chosen2.innerText ="";
-})*/
+
 
 const genRand = () => Math.floor(Math.random() * (150 - 30 + 1) + 30)
 const genRand2 = () => Math.floor(Math.random() * (140 - 30 + 1) + 30)
 
 submitHome.addEventListener("click", function(){
-    ///var y = Math.floor((Math.random() * (130 + 30)));
-    //var x = Math.floor((Math.random() * (120 + 30)));
+    
     
     Chosen1.innerText = homeTeam.value + ": " + genRand();
     para1 = document.getElementById("hometeamp");
@@ -330,7 +323,5 @@ submitHome.addEventListener("click", function(){
 
 })
 
-//if(homeTeam.value || AwayTeam.value == "Cats"){
-    //console.log("cats");
 
-//}
+

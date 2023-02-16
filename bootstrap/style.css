@@ -13,7 +13,7 @@
 #homeBtn{
     color: rgba(0, 115, 255, 0.9);
 }
-body{
+#body{
     background-image: url(images/Simonds.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,6 +38,7 @@ body{
 #layout{
     font-size: 24px;
     min-height:100vh;
+    flex-wrap: wrap;
     
     display: flex;
     flex-direction: column;
@@ -74,17 +75,18 @@ padding-left: .5rem;
 padding-right: .5rem;
 border-radius: 10px;
 color: rgb(14, 0, 68);
+min-width: 30rem;
 }
 #middle{
     background: linear-gradient(to right,  rgba(14, 0, 68, 0.7), rgba(42, 190, 235, 0.7));
     flex: 3 3;
     padding: .5rem 1rem;
     border: 3px solid;
-    
     text-align: left;
     color: rgb(175, 175, 175);
     font-size: 22px;
     border-radius: 10px;
+    min-width: 30rem;
 }
 #main{
 display: flex;
@@ -92,6 +94,7 @@ flex: 1;
 flex-wrap: wrap;
 padding: 2rem 2rem;
 text-align: center;
+
 
 
 }
@@ -105,6 +108,7 @@ text-align: center;
     padding: .5rem .5rem;
     border-radius: 10px;
     color: rgb(42, 190, 235);
+    min-width: 30rem;
    
 
 }
@@ -112,6 +116,26 @@ text-align: center;
     
  #hr{
     color:  grey;
+}
+/* predictions page*/
+
+#predictionBody{
+    background-image: url("images/westderby.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position:center;
+    color: white;
+    text-align: center;
+    align-content: center;
+    border-top: none;
+    font-size: 20px;
+
+
+}
+#homelinkpd{
+    color: rgb(31, 219, 2);
+    text-decoration: underline;
 }
 
 /*Page 2 starts here */
@@ -142,14 +166,16 @@ input[type=text], select, textarea {
     background-color: #45a049;
   }
   
-  
-  .container {
+#contactBody{
+    background-image: url("images/Simonds.jpg");
+}
+.container{
     border-radius: 5px;
     background-color: rgba(242, 242, 242, 0.6);
     padding: 20px;
     color: black;
     font-weight: bold;
-  }
+}
 #subject{
     background-color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
@@ -182,4 +208,309 @@ input[type=text], select, textarea {
 }
 #predictionInfo{
     font-size: 14px;
+}
+
+/*mini games starts here*/
+
+#mgbody{
+    background-image: url(images/mcg.jpg);
+    background-size: cover;
+    background-repeat:repeat-y;
+    height: 100vh;
+    background-position:fixed;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 49);
+}
+#minigamesbox{
+    display: flex;
+    margin: 1rem 1rem;
+    padding: .5rem .5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap ;
+    font-size: 20px;
+    letter-spacing: .1rem;
+    flex-grow: 1;
+}
+h4{
+    text-align: center;
+}
+#mgbox1{
+    padding: 2rem 2rem;
+    background-color: rgba(127, 234, 255, 0.6);
+    border: solid 4px;
+    border-radius: 10px;
+    border-color: rgba(0, 115, 255, 0.9);
+    margin: 1rem 1rem;
+    flex: 1 1 3rem;
+    height: 15rem;
+    text-align: center;
+}
+#mgbox2{
+    padding: 2rem 2rem;
+    background-color: rgba(127, 234, 255, 0.6);
+    border: solid 4px;
+    border-radius: 10px;
+    border-color: rgba(0, 115, 255, 0.9);
+    margin: 1rem 1rem;
+    flex: 1 1 3rem;
+    height: 15rem;
+    text-align: center;
+}
+#minigamesbox2{
+    display: flex;
+    margin: 1rem 1rem;
+    padding: .5rem .5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap ;
+    font-size: 20px;
+    letter-spacing: .1rem;
+    flex-grow: 1;
+    
+}
+#mgbox3{
+    padding: 2rem 2rem;
+    background-color: rgba(127, 234, 255, 0.6);
+    border: solid 4px;
+    border-radius: 10px;
+    border-color: rgba(0, 115, 255, 0.9);
+    margin: 1rem 1rem;
+    flex: 1 1 3rem;
+    height: 15rem;
+}
+#mgbox4{
+    padding: 2rem 2rem;
+    background-color: rgba(127, 234, 255, 0.6);
+    border: solid 4px;
+    border-radius: 10px;
+    border-color: rgba(0, 115, 255, 0.9);
+    margin: 1rem 1rem;
+    flex: 1 1 3rem;
+    height: 15rem;
+}
+#startgamebtn{
+    border: solid 3px;
+    border-color: rgba(0, 115, 255, 0.9);
+    border-radius: 10px;
+    background-color: rgba(127, 234, 255, 0.9);
+    color: white;
+    
+}
+#playgamebtn{
+    border: solid 3px;
+    border-color: rgba(0, 115, 255, 0.9);
+    border-radius: 10px;
+    background-color: rgba(127, 234, 255, 0.9);
+    color: white;
+    padding: .1rem .5rem;
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+.hide{
+    display: none;
+}
+    
+#next1{
+    margin: auto;
+    border: solid 3px;
+    border-color: rgba(0, 115, 255, 0.9);
+    border-radius: 10px;
+    background-color: rgba(127, 234, 255, 0.9);
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .1rem;
+    margin-top: .5rem;
+}
+#next2{
+    margin: auto;
+    border: solid 3px;
+    border-color: rgba(0, 115, 255, 0.9);
+    border-radius: 10px;
+    background-color: rgba(127, 234, 255, 0.9);
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .1rem;
+    margin-top: .5rem;
+}
+#next3{
+    margin: auto;
+    border: solid 3px;
+    border-color: rgba(0, 115, 255, 0.9);
+    border-radius: 10px;
+    background-color: rgba(127, 234, 255, 0.9);
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .1rem;
+    margin-top: .5rem;
+}
+#startgamebtn:hover{
+    background-color: rgb(46, 143, 147);
+    color: black;
+
+}
+
+/*Quiz page starts here*/
+#quizbody{
+    background-color: rgb(203, 99, 99);
+    font-family:Verdana, Tahoma, sans-serif;
+    color: azure;
+    min-width: 40rem;
+}
+/*#game{
+    min-width: 30rem;
+    max-width: 40rem;
+}*/
+.choice-container{
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 15px;
+    background: rgba(0, 191, 255, 0.7);
+    font-size: 2rem;
+    min-width: 30rem;
+   
+    
+    
+}
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem rgba(0, 115, 255, 0.8);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+.choice-prefix{
+    padding: 1.5rem 2.5rem;
+    color: rgb(255, 255, 255);
+}
+.choice-text{
+    padding:1.5rem;
+    width: 100%;
+    
+}
+.correct{
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+}
+.incorrect{
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 111) 100%);
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+
+}
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+.hud-main-text{
+    text-align: center;
+}
+#progressBar{
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgba(11, 223, 36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+#progressBarFull{
+    height: 100%;
+    background: rgba(11, 223, 36);
+    width: 0%;
+    border-radius: 20px;
+
+}
+
+
+@media screen and (max-width: 768px){
+    .choice-container{
+        min-width: 40rem;
+        margin-left: none;
+    }
+    #quizbody{
+        margin-left: none;
+    }
+}
+
+.end-form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+}
+
+input::placeholder{
+    color: #d3d3d3;
+
+}
+#username{
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text{
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+}
+#saveScoreBtn{
+    border: none;
+}
+
+#btn{
+    color: aqua;
+    border: 3px solid;
+    padding: 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-top: 12px;
+    min-width: 10rem;
+    text-align: center;
+}
+#endPage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("images/motlop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position:center;
+}
+
+#finalScore{
+    color: aqua;
+    border: 3px solid;
+    padding: 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    min-width: 15rem;
+    text-align: center;
+
 }

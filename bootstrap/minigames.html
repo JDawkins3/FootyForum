@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home page</title>
+    <title>Mini Games</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body id="body">
+  <body id="mgbody">
     <nav
       class="navbar navbar-expand-lg sticky-top bg-body-tertiary"
       data-bs-theme="dark"
@@ -156,124 +156,31 @@
         </div>
       </div>
     </nav>
-
-    <div id="layout">
-      <header id="header">
-        <h1>The Footy Forum</h1>
-      </header>
-      <main id="main">
-        <nav id="left">
-          Ladder
-          <br />
-          1: Geelong <br />
-          2: Melbourne <br />
-          3: Sydney <br />
-          4: Collingwood <br />
-          5: Fremantle <br />
-          6: Brisbane <br />
-          7: Richmond <br />
-          8: Bulldogs <br />
-          9: Carlton <br />
-          10: St Kilda <br />
-          11: Port Adelaide <br />
-          12: Gold Coast <br />
-          13: Hawthorn <br />
-          14: Adelaide <br />
-          15: Essendon <br />
-          16: GWS <br />
-          17: West Coast <br />
-          18: North Melbourne
-        </nav>
-        <article id="middle">
-          Round 1 Predictions: <br />
-          Richmond v Carlton: Richmond 2-3 Goals <br />
-          Geelong v Collingwood: Geelong Under 2 goals <br />
-          North v West Coast: Eagles 4 or more Goals <br />
-          Port v Brisbane: Lions 1 or 2 goals <br />
-          Melbourne v Bulldogs: Demons by 5 or more goals <br />
-          Suns v Sydney: Suns by 2 goals <br />
-          Giants v Crows: Crows by 4-5 goals <br />
-          Hawthorn v Essendon: Bombers by 4-5 goals <br />
-          St Kilda v Freo: Dockers by 3 goals <br />
-          <div id="ScorePredictor">
-            Score Predictor <br />
-            Choose Home Team
-            <select name="teamselect" id="teamselect1">
-              <option value="Crows">Adelaide</option>
-              <option value="Lions">Brisbane</option>
-              <option value="Blues">Carlton</option>
-              <option value="Magpies">Collingwood</option>
-              <option value="Bombers">Essendon</option>
-              <option value="Dockers">Fremantle</option>
-              <option value="Cats">Geelong</option>
-              <option value="Suns">Gold Coast</option>
-              <option value="Giants">GWS</option>
-              <option value="Hawks">Hawthorn</option>
-              <option value="Demons">Melbourne</option>
-              <option value="Kangaroos">North Melbourne</option>
-              <option value="Power">Port Adelaide</option>
-              <option value="Tigers">Richmond</option>
-              <option value="Swans">Sydney</option>
-              <option value="Saints">St Kilda</option>
-              <option value="Eagles">West Coast</option>
-              <option value="Bulldogs">Western Bulldogs</option>
-            </select>
+    <div id="minigamesbox">
+      <div id="mgbox1">
+        <h4>Score Predictor</h4>
+        <br />
+        <br />
+        <a id="playgamebtn" href="predictor.html" class="bth">Play Game</a>
+      </div>
+      <div id="mgbox2">
+        <div class="container1">
+          <div id="home" class="flex-column flex-center">
+            <h4>2022 Season Quiz</h4>
             <br />
-            Choose Away Team
-            <select name="teamselect" id="teamselect2">
-              <option value="Crows">Adelaide</option>
-              <option value="Lions">Brisbane</option>
-              <option value="Blues">Carlton</option>
-              <option value="Magpies">Collingwood</option>
-              <option value="Bombers">Essendon</option>
-              <option value="Dockers">Fremantle</option>
-              <option value="Cats">Geelong</option>
-              <option value="Suns">Gold Coast</option>
-              <option value="Giants">GWS</option>
-              <option value="Hawks">Hawthorn</option>
-              <option value="Demons">Melbourne</option>
-              <option value="Kangaroos">North Melbourne</option>
-              <option value="Power">Port Adelaide</option>
-              <option value="Tigers">Richmond</option>
-              <option value="Swans">Sydney</option>
-              <option value="Saints">St Kilda</option>
-              <option value="Eagles">West Coast</option>
-              <option value="Bulldogs">Western Bulldogs</option>
-            </select>
             <br />
-            <button id="submit1" type="submit">Predict Score</button>
-
-            <br />
-
-            <p id="hometeamp">Home Team:</p>
-            V <br />
-            <br />
-            <p id="awayteamp">Away Team:</p>
+            <a id="playgamebtn" href="quiz.html" class="bth">Play Game</a>
           </div>
-        </article>
-        <aside id="right">
-          Round 1: March 16<br />
-          Thursday: <br />
-          Richmond v Carlton @MCG <br />
-          <hr />
-          Friday: <br />
-          Cats v Pies @MCG <br />
-          <hr />
-          Saturday: <br />
-          Kangaroos v Eagles @MRVL <br />
-
-          Port Adelaide v Lions @AO<br />
-
-          Demons v Bulldogs @MCG <br />
-
-          Suns v Swans @Metricon <br />
-          <hr />
-          Sunday: <br />
-          Giants v Adelaide @GS <br />
-          Hawks v Bombers @MCG <br />
-          St Kilda v Freo @MRVL
-        </aside>
-      </main>
+        </div>
+      </div>
+    </div>
+    <div id="minigamesbox2">
+      <div id="mgbox3">
+        <h4>Title 3</h4>
+      </div>
+      <div id="mgbox4">
+        <h4>Title 4</h4>
+      </div>
     </div>
 
     <script
@@ -292,7 +199,9 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-
-    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
   </body>
 </html>
